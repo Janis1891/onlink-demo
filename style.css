@@ -1,0 +1,116 @@
+
+/* === Bootstrap Essentials === */
+:root {
+  --bs-body-bg: #fff;
+  --bs-body-color: #212529;
+  --bs-primary: #0d6efd;
+  --bs-border-radius: 0.375rem;
+}
+
+/* Typography and base */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* Grid (basic example) */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.col-md-6 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: var(--bs-border-radius);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-primary {
+  background-color: var(--bs-primary);
+  color: #fff;
+  border-color: var(--bs-primary);
+}
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.navbar-brand {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+/* Tabs */
+.nav-link {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+}
+.nav-link.active {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-image-section {
+  background: url('images/hero.png') center/cover no-repeat;
+  height: 500px;
+  color: white;
+}
+.hero-image-section .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+.hero-image-section .hero-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* Plans */
+.plan-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}

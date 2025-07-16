@@ -1,0 +1,12 @@
+{
+  "name": "onlink-sample",
+  "version": "1.0.0",
+  "description": "Sample project for On-link site hero + plans using SCSS and Bootstrap",
+  "scripts": {
+    "compile-scss": "sass scss/main.scss style.css",
+    "watch-scss": "sass --watch scss/main.scss:style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

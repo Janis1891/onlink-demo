@@ -1,0 +1,19 @@
+
+.hero-image-section {
+  background: url('../hero.png') center/cover no-repeat;
+  height: 500px;
+  color: white;
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+}
